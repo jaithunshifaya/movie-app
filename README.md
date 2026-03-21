@@ -147,11 +147,7 @@ http://localhost:3000
 
 Add this dependency in `pom.xml`:
 
-<dependency>
-    <groupId>org.springdoc</groupId>
-    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-    <version>2.5.0</version>
-</dependency>
+<dependency> <groupId>org.springdoc</groupId> <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId> <version>2.5.0</version> </dependency> ```
 
 Access Swagger UI:
 
@@ -160,25 +156,16 @@ http://localhost:8080/swagger-ui.html
 ---
 
 ## 🌍 Deployment Guide
-
-### 🔹 Backend (Render)
-Push backend to GitHub
-Go to https://render.com
-Create Web Service
-Connect GitHub repo
-Set:
-Build Command: mvn clean install
-Start Command: java -jar target/*.jar
-Add Environment Variables:
-omdb.api.key=YOUR_API_KEY
-spring.datasource.url=YOUR_DB_URL
-spring.datasource.username=YOUR_DB_USER
-spring.datasource.password=YOUR_DB_PASS
+### 🔹 Backend Deployment (Render)
+1. Push Backend to GitHub
+2. Go to https://render.com
+3. Create a Web Service
+4. Connect GitHub repo
 
 ### 🔹 Frontend (Vercel)
-Go to https://vercel.com
-Import GitHub repo
-Select Frontend folder
+1. Go to https://vercel.com
+2. Import GitHub repo
+3. Select Frontend folder
 
 ### ⚠️ Important Notes
 - Always send JWT token in headers
