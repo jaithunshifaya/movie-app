@@ -99,38 +99,53 @@ http://localhost:3000
 - Every API request includes:
 - Authorization: Bearer <token>
 
+
 ---
 
 ## 📬 API Endpoints (Postman)
 
 ### 🔹 Auth APIs
-Method	Endpoint	Description
-POST	/auth/register	Register user
-POST	/auth/login	Login & get token
+
+| Method | Endpoint         | Description        |
+|--------|----------------|------------------|
+| POST   | /auth/register | Register user     |
+| POST   | /auth/login    | Login & get token|
+
+---
 
 ### 🔹 Movie APIs
-Method	Endpoint	Description
-GET	/movies?name=batman	Search movies
-GET	/movies/details?id=tt123	Get movie details
+
+| Method | Endpoint                         | Description        |
+|--------|----------------------------------|--------------------|
+| GET    | /movies?name=batman              | Search movies      |
+| GET    | /movies/details?id=tt1234567     | Movie details      |
+
+---
 
 ### 🔹 Favorites APIs
-Method	Endpoint	Description
-POST	/favorites	Add favorite
-GET	/favorites	Get favorites
-DELETE	/favorites/{id}	Delete favorite
-PUT	/favorites/{id}	Update favorite
+
+| Method | Endpoint            | Description         |
+|--------|--------------------|---------------------|
+| POST   | /favorites         | Add favorite        |
+| GET    | /favorites         | Get all favorites   |
+| DELETE | /favorites/{id}    | Delete favorite     |
+| PUT    | /favorites/{id}    | Update favorite     |
+
+---
 
 ### 🔹 History APIs
-Method	Endpoint	Description
-GET	/movies/history	Get search history
-DELETE	/movies/history/{id}	Delete one
-DELETE	/movies/history/clear	Clear all
+
+| Method | Endpoint                       | Description              |
+|--------|--------------------------------|--------------------------|
+| GET    | /movies/history               | Get search history       |
+| DELETE | /movies/history/{id}          | Delete one history       |
+| DELETE | /movies/history/clear         | Clear all history        |
 
 ---
 
 ## 🧪 Swagger Setup (Optional)
 
-Add dependency in pom.xml:
+Add this dependency in `pom.xml`:
 
 <dependency>
     <groupId>org.springdoc</groupId>
