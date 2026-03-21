@@ -1,0 +1,59 @@
+# ======================
+# 🔹 Backend (Spring Boot / Java)
+# ======================
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Logs
+*.log
+
+# ======================
+# 🔹 Frontend (React / Vite)
+# ======================
+node_modules/
+dist/
+build/
+.env
+.env.local
+.env.*.local
+
+# ======================
+# 🔹 IDEs
+# ======================
+
+## STS ##
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+## IntelliJ ##
+.idea
+*.iws
+*.iml
+*.ipr
+
+## VS Code ##
+.vscode/
+
+## NetBeans ##
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ======================
+# 🔹 OS files
+# ======================
+.DS_Store
+Thumbs.db
