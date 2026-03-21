@@ -93,11 +93,11 @@ http://localhost:3000
 ---
 
 ## 🔐 JWT Authentication Flow
->User logs in
->Backend returns JWT token
->Token stored in localStorage
->Every API request includes:
->Authorization: Bearer <token>
+- User logs in
+- Backend returns JWT token
+- Token stored in localStorage
+- Every API request includes:
+- Authorization: Bearer <token>
 
 ---
 
@@ -166,9 +166,9 @@ Import GitHub repo
 Select Frontend folder
 
 ### ⚠️ Important Notes
-Always send JWT token in headers
-Do NOT commit API keys publicly
-Use .env for frontend configs
+- Always send JWT token in headers
+- Do NOT commit API keys publicly
+- Use .env for frontend configs
 
 ---
 
@@ -179,16 +179,16 @@ Jaithun Shifaya
 ---
 
 ## ⭐ Acknowledgment
-OMDb API
-Spring Boot Docs
-React Docs
+- OMDb API
+- Spring Boot Docs
+- React Docs
 
 ---
 
 ## 🚀 Future Improvements
-🎥 Watchlist Feature
-📊 Movie Recommendations (AI)
-🌐 Multi-language support
+- 🎥 Watchlist Feature
+- 📊 Movie Recommendations (AI)
+- 🌐 Multi-language support
 
 ---
 
