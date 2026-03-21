@@ -1,0 +1,35 @@
+package com.movieapp.config;
+
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
+import org.springframework.stereotype.Component;
+
+import java.security.Key;
+import java.util.Date;
+
+@Component
+public class JwtUtil {
+
+    // ✅ GENERATE STRONG KEY (256-bit)
+    private final Key key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
+
+    public String generateToken(String email) {
+        return Jwts.builder()
+                .setSubject(email)
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(System.currentTimeMillis() + 86400000))
+                .signWith(key)   // ✅ FIXED
+                .compact();
+    }
+
+    public String extractUsername(String token) {
+
+        return Jwts.parserBuilder()
+                .setSigningKey(key)
+                .build()
+                .parseClaimsJws(token.replace("Bearer ", "")) // 🔥 important
+                .getBody()
+                .getSubject();
+    }
+}
