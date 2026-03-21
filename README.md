@@ -26,15 +26,24 @@ CineVerse is a full-stack movie application that allows users to search movies, 
 ---
 
 ## 📂 Project Structure
+
 movie-app/
+
 ├── Backend/
+
 │ ├── src/
+
 │ ├── pom.xml
+
 │ └── application.properties
+
 │
 └── Frontend/
+
 ├── src/
+
 ├── package.json
+
 └── public/
 
 
@@ -64,10 +73,13 @@ movie-app/
 ### 🔹 Step 1: Configure Database
 
 spring.datasource.url=jdbc:mysql://localhost:3306/movie_app
+
 spring.datasource.username=root
+
 spring.datasource.password=your_password
 
 spring.jpa.hibernate.ddl-auto=update
+
 spring.jpa.show-sql=true
 
 ---
