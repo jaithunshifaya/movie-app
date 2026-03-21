@@ -75,6 +75,7 @@ spring.jpa.show-sql=true
 ### 🔹 Step 2: Run Backend
 
 cd Backend
+
 mvn spring-boot:run 
 
 Server runs on:
@@ -83,7 +84,9 @@ http://localhost:8080
 
 ## 💻 Frontend Setup (React)
 cd Frontend
+
 npm install
+
 npm start
 
 App runs on:
