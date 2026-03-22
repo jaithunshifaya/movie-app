@@ -27,26 +27,18 @@ CineVerse is a full-stack movie application that allows users to search movies, 
 
 ## 📂 Project Structure
 
+```bash
 movie-app/
-
 ├── Backend/
-
 │ ├── src/
-
 │ ├── pom.xml
-
 │ └── application.properties
-
 │
 └── Frontend/
-
 ├── src/
-
 ├── package.json
-
 └── public/
-
-
+```
 ---
 
 ## 🔐 Features
@@ -71,7 +63,7 @@ movie-app/
 ## ⚙️ Backend Setup (Spring Boot)
 
 ### 🔹 Step 1: Configure Database
-
+```bash
 spring.datasource.url=jdbc:mysql://localhost:3306/movie_app
 
 spring.datasource.username=root
@@ -81,30 +73,26 @@ spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 
 spring.jpa.show-sql=true
+```
 
 ---
 
 ### 🔹 Step 2: Run Backend
-
+```bash
 cd Backend
-
 mvn spring-boot:run 
-
 Server runs on:
-
 http://localhost:8080
+```
 
 ## 💻 Frontend Setup (React)
+```bash
 cd Frontend
-
 npm install
-
 npm start
-
 App runs on:
-
 http://localhost:3000
-
+```
 ---
 
 ## 🔐 JWT Authentication Flow
@@ -113,7 +101,6 @@ http://localhost:3000
 - Token stored in localStorage
 - Every API request includes:
 - Authorization: Bearer <token>
-
 
 ---
 
@@ -165,9 +152,9 @@ Add this dependency in `pom.xml`:
 <dependency> <groupId>org.springdoc</groupId> <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId> <version>2.5.0</version> </dependency> ```
 
 Access Swagger UI:
-
+```bash
 http://localhost:8080/swagger-ui.html
-
+```
 ---
 
 ## 🌍 Deployment Guide
